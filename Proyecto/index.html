@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Juliana The Sheep</title>
+</head>
+
+<body>
+
+  <main>
+
+    <div id="game-board" class="row d-none">
+      <div class="col p-5 align-items-center">
+        <canvas id="canvas" width="1000" height="600"></canvas>
+      </div>
+    </div>
+  </main>
+  
+  
+  <div class="col p-5 align-items-center">
+    <div id="home-background" class="row">
+      <div id="img-home-container" class="h-100">
+        <img src="./images/inicio/home-background.png" class="h-100" id="img-home-background" alt="game logo" />
+      </div>
+        
+<small id="game-info">Create by Sheila Hernández Rico in 2023 | Inspired on Crossy Road</small>
+      <div id="buttons-home-container" class="d-flex justify-content-center">
+        <button id="instructions-btn"class="btn btn-info">HOW TO PLAY</button>
+        <button id="play-btn" class="btn btn-danger">START GAME</button>
+      </div>
+    </div>
+  </div>
+
+    <div id="instructions-container" class="d-none">
+      <div id="instructions">
+        <h2>GET "JULIANA" THE LITTLE SHEEP TO HER HOUSE</h2>
+        <br />
+        <br />
+        <ul>
+          <li>Be careful with the cars or they will take lives away from you.</li>
+          <li>Juliana must get to her house where the arrow is indicating</li>
+        </ul>
+        <br />
+        <br />
+        <h2>COMMANDS</h2>
+        <img src="./images/inicio/comandos.png" alt="commands" />
+        <br />
+        <br />
+        <button id="close-instructions-btn" class="btn-with-sound">CLOSE</button>
+      </div>
+    </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/constants.js"></script>
+  <script type="text/javascript" src="./js/complement.js"></script>
+  <script type="text/javascript" src="./js/background.js"></script>
+  <script type="text/javascript" src="./js/obstacle.js"></script>
+  <script type="text/javascript" src="./js/player.js"></script>
+  <script type="text/javascript" src="./js/lives.js"></script>
+  <script type="text/javascript" src="./js/game.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
